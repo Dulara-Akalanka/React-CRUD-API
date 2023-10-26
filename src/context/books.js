@@ -40,7 +40,7 @@ function Provider({ children }) {
 
   const createBook = async (title) => {
     const response = await axios.post('http://localhost:3001/books', {
-      title,
+      title,// <= title:title
     });
 
     const updatedBooks = [...books, response.data];

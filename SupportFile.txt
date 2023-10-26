@@ -1,0 +1,18 @@
+- To install json server
+    npm install json-server
+- To run the json server 
+    npm run server
+- data is stored in db.json
+
+- GET for retrieve, POST for save, PUT for edit, DELETE
+- http://localhost:3001/books, here the books comes from db.json file, the key value comes here. "books": []
+
+- REST Client extension - make API request within the code
+- api.http, kind of a document which says how we handle th APIs
+
+- useEffect
+    run the code at specific time only, has two arguments, first the arrow function which executes what we need,
+    second is when it shoulde be executed
+        -[] called after first render and never called again
+        - no argument called after first render and called after every rerender
+        -[counter] can be a prop/state or a variable, called after first render and called after rerenders if counter variable changed
